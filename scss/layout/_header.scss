@@ -1,0 +1,16 @@
+@use '../utils/' as *;
+.header {
+  @include flex-center;
+  padding: rem(50) 0;
+
+  &__logo-box {
+    @include flex-center;
+    gap: rem(16);
+  }
+
+  &__logo-name {
+    font-size: rem(32);
+    font-weight: $semi-bold;
+    color: $dark-blue-1;
+  }
+}

@@ -1,0 +1,59 @@
+@use '../utils/' as *;
+.button,
+.btn-link {
+  font-weight: $semi-bold;
+  padding: rem(16) rem(50);
+  border-radius: rem(8);
+  font-size: rem(16);
+
+  &:focus {
+    box-shadow: 0 0 0 rem(3) $light-grayish-blue;
+  }
+}
+.button {
+  background-color: $primary;
+  border: 1px solid currentColor;
+  color: $white;
+  cursor: pointer;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    font-size: rem(16);
+    font-weight: $semi-bold;
+    border-radius: rem(8);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 rem(3) $light-grayish-blue;
+  }
+
+  &--other {
+    &:link,
+    &:visited {
+      background-color: $dark-blue-1;
+      color: $white;
+      padding: rem(16);
+      border: 1px solid transparent;
+    }
+  }
+
+  &--signup {
+    &:link,
+    &:visited {
+      border: 1px solid $primary;
+      color: $primary;
+      padding: rem(16) rem(40);
+    }
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: rem(18);
+    font-weight: $semi-bold;
+    color: $dark-blue-2;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Apprigator Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./" class="header__logo-box">
+          <img
+            src="images/logo.png"
+            alt="Apprigator Logo"
+            width="64"
+            height="64"
+            class="header__logo"
+          />
+          <span class="header__logo-name">Apprigator</span>
+        </a>
+      </header>
+      <main class="login-card">
+        <header class="login-card__header">
+          <img
+            src="images/leaf.png"
+            width="394"
+            height="215"
+            alt="Leaves"
+            class="login-card__cover"
+          />
+          <figure class="login-card__figure">
+            <img
+              src="images/user-avatar.png"
+              alt="Rony"
+              width="112"
+              height="112"
+              class="login-card__user-img"
+            />
+            <figcaption class="login-card__user-name">
+              Welcome back, <span>Rony</span>
+            </figcaption>
+          </figure>
+        </header>
+        <form action="#" class="form">
+          <div class="form__group-input">
+            <label for="phone" class="form__label form__label--phone"
+              >Phone</label
+            >
+            <input
+              type="number"
+              class="form__input form__input--phone"
+              id="phone"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+
+          <div class="form__group-input">
+            <label for="password" class="form__label form__label--password">
+              Password
+            </label>
+            <input
+              type="password"
+              class="form__input form__input--password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <img
+              src="images/icon-eye-off.svg"
+              alt="Show Password"
+              width="24"
+              height="24"
+              class="form__input--password-icon"
+              role="button"
+            />
+          </div>
+
+          <div class="form__group-checkbox">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              class="form__checkbox"
+              id="remember-me"
+            />
+            <label for="remember-me" class="form__checkbox-label">
+              <span aria-label="checkbox" class="form__checkbox-button">
+                <svg class="form__checkbox-button-icon">
+                  <use xlink:href="images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              Remember me
+            </label>
+            <a href="#" class="form__forgot-pass">Forgot password?</a>
+          </div>
+          <button type="submit" class="button">Login</button>
+          <div class="form__group-btn-text">
+            <a href="#" class="btn-text">I'm not robot</a>
+          </div>
+
+          <div class="form__group-btn">
+            <a href="#" class="btn btn--other">Other User login</a>
+            <a href="#" class="btn btn--signup">Sign Up</a>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

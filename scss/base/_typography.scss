@@ -1,0 +1,8 @@
+@use '../utils' as *;
+
+body {
+  font-family: $font-primary;
+  font-weight: $regular;
+  background-color: $background;
+  line-height: 1;
+}
