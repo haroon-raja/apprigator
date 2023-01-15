@@ -45,6 +45,10 @@
       border: 1px solid $primary;
       color: $primary;
       padding: rem(16) rem(40);
+
+      @include breakpoint-desktop(small) {
+        padding-inline: rem(30);
+      }
     }
   }
 }

@@ -18,6 +18,9 @@
       @include flex-v-center;
       justify-content: space-between;
 
+      @include breakpoint-desktop(small) {
+        gap: rem(10);
+      }
       &-text {
         @include flex-h-center;
       }
@@ -45,6 +48,17 @@
       &::-webkit-input-placeholder {
         color: $dark-grayish-violet;
       }
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+      appearance: textfield;
     }
 
     &--password {
